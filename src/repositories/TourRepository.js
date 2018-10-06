@@ -6,7 +6,7 @@
 
 import BaseRepository from "./BaseRepository";
 
-class MainRepository extends BaseRepository {
+class TourRepository extends BaseRepository {
     getItems(filters) {
         return this.rawQuery(`
         SELECT * FROM product.tour 
@@ -16,4 +16,4 @@ class MainRepository extends BaseRepository {
     }
 }
 
-export default new MainRepository();
+export default new TourRepository();

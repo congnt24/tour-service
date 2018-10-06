@@ -5,7 +5,7 @@
 
 "use strict";
 import express from "express";
-import MainController from "./controllers/MainController";
+import MainController from "./controllers/TourController";
 
 let routes = express.Router();
 routes.get('/check-heath', (req, res, next) => {

@@ -4,9 +4,9 @@
 
 "use strict";
 
-import MainService from "../services/MainService";
+import MainService from "../services/TourService";
 
-class MainController {
+class TourController {
     async getItems(req, res, next) {
         try {
             res.sendJson({data: await MainService.getItems()})
@@ -16,4 +16,4 @@ class MainController {
     }
 }
 
-export default new MainController();
+export default new TourController();

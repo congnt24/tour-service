@@ -4,12 +4,12 @@
 
 "use strict";
 
-import MainRepository from "../repositories/MainRepository";
+import MainRepository from "../repositories/TourRepository";
 
-class MainService {
+class TourService {
     getItems(){
         return MainRepository.getItems();
     }
 }
 
-export default new MainService()
+export default new TourService()

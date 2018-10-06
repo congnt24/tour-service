@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({extended: false, limit: '50mb'}));
 app.use(rest());
-app.use('/main-service', routes);
+app.use('/tour-service', routes);
 
 app.listen(process.env.PORT || 3001, function () {
     console.log(`Start server at : ${new Date()}
